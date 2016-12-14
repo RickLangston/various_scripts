@@ -9,6 +9,8 @@ if [ $? -eq 100 ]
         then
          echo "updates ready"
          yum check-update |mailx $EML
+         sleep 120
+         shutdown -fr now
 else
      echo "NO updates ready"
 
