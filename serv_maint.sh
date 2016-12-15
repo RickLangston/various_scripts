@@ -1,7 +1,7 @@
 !/bin/bash
 # Server maint script
 # for testing a centos server for updates and emailing if found
-
+#
 EML=youremail@domain.com
 yum check-update 2> /dev/null
 
